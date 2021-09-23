@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*Custom CSS*/
+
+
+/* body {
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+} */
+
+a:visited {
+    color: hsl(212, 27%, 19%);
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 0.375rem;
+    line-height: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+h2 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+    margin: 4.375rem 0 2.25rem 0;
+    padding: 0 1.5rem;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    padding: 0 1.5rem;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: hsl(232, 10%, 55%);
+}
+
+footer {
+    color: hsl(7, 99%, 70%);
+    color: hsl(51, 100%, 49%);
+    color: hsl(167, 40%, 24%);
+    color: hsl(198, 62%, 26%);
+    color: hsl(168, 34%, 41%);
+    color: hsl(212, 27%, 19%);
+    color: hsl(213, 9%, 39%);
+    color: hsl(232, 10%, 55%);
+    color: hsl(210, 4%, 67%);
+    color: hsl(0, 0%, 100%);
+}
+
+#transform img,
+#stand-out img,
+#graphic-design img,
+#photography img {
+    width: 100%;
+}
+
+#transform p,
+#stand-out p {
+    padding-bottom: 3rem;
+}
+
+#transform,
+#stand-out {
+    padding-bottom: 4.375rem;
+}
+
+#transform a,
+#stand-out a {
+    text-transform: uppercase;
+    font-family: 'Fraunces', sans-serif;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+
+/* #transform a::after { */
+
+
+/* display: block;
+    content: '';
+    width: 100px;
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 1rem;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%; */
+
+
+/* } */
+
+#transform a::after {
+    z-index: -1;
+    display: block;
+    content: '';
+    width: 125px;
+    background-color: hsla(51, 100%, 49%, 30%);
+    border-radius: 4px;
+    height: 8px;
+    position: relative;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#stand-out a::after {
+    z-index: -1;
+    display: block;
+    content: '';
+    width: 125px;
+    background-color: hsla(7, 99%, 70%, 30%);
+    border-radius: 4px;
+    height: 8px;
+    position: relative;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#transform a:hover::after {
+    background-color: hsla(51, 100%, 49%, 100%);
+}
+
+#stand-out a:hover::after {
+    background-color: hsla(7, 99%, 49%, 100%);
+}
+
+#graphic-design {
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 25rem 0 3.5rem 0;
+}
+
+#graphic-design h2 {
+    color: hsl(167, 40%, 24%);
+    font-size: 1.75rem;
+    text-transform: capitalize;
+}
+
+#graphic-design p {
+    color: hsl(167, 40%, 24%);
+    font-size: 15px;
+}
+
+#photography {
+    background-image: url(./images/mobile/image-photography.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 25rem 0 3.5rem 0;
+}
+
+#photography h2 {
+    color: hsl(198, 62%, 26%);
+    font-size: 1.75rem;
+    text-transform: capitalize;
+}
+
+#photography p {
+    color: hsl(198, 62%, 26%);
+    font-size: 15px;
+}
+
+.hero {
+    background-image: url(./images/mobile/image-header.jpg);
+    background-position: bottom;
+    text-align: center;
+    background-size: cover;
+    padding-bottom: 8.25rem;
+}
+
+.navbar {
+    padding: 2.25rem 1.5rem 6.125rem 1.5rem;
+    /* text-align: left; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.navlinks {
+    display: none;
+}
