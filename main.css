@@ -9,11 +9,33 @@
 
 /*Custom CSS*/
 
-
-/* body {
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Fraunces', serif;
-} */
+:root {
+    /*font families*/
+    --ff-Barlow: 'Barlow', sans-serif;
+    /*h1,h2*/
+    --ff-Fraunces: 'Fraunces', serif;
+    /*font sizes*/
+    /*h1*/
+    --fs-h1: 2.5rem;
+    --fs-h2: 2rem;
+    --fs-h2-m: 1.25rem;
+    --fs-h2-s: 1.75rem;
+    --fs-h2-xs: 1rem;
+    --fs-p: 1.125rem;
+    --fs-p-s: 0.9375rem;
+    /*colors*/
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-vd-desaturated-blue: hsl(212, 27%, 19%);
+    --clr-vd-grayish-blue: hsl(213, 9%, 39%);
+    --clr-d-grayish-blue: hsl(232, 10%, 55%);
+    --clr-grayish-blue: hsl(210, 4%, 67%);
+    --clr-yellow: hsl(51, 100%, 49%);
+    --clr-yellow-tr: hsla(51, 100%, 59%, 30%);
+    --clr-red: hsl(7, 99%, 70%);
+    --clr-red-tr: hsla(7, 99%, 70%, 30%);
+    --clr-d-desaturated-cyan: hsl(167, 40%, 24%);
+    --clr-d-blue: hsl(198, 62%, 26%);
+}
 
 a:visited {
     color: hsl(212, 27%, 19%);
@@ -26,11 +48,11 @@ main {
 }
 
 h1 {
-    font-family: 'Fraunces', serif;
+    font-family: var(--ff-Fraunces);
     font-weight: 900;
     text-transform: uppercase;
-    color: white;
-    font-size: 2.5rem;
+    color: var(--clr-white);
+    font-size: var(--fs-h1);
     text-align: center;
     letter-spacing: 0.375rem;
     line-height: 3rem;
@@ -39,9 +61,9 @@ h1 {
 
 h2 {
     font-family: 'Fraunces', sans-serif;
-    font-size: 2rem;
+    font-size: var(--fs-h2);
     font-weight: 900;
-    color: hsl(212, 27%, 19%);
+    color: var(--clr-vd-desaturated-blue);
     margin: 4.375rem 0 2.25rem 0;
     padding: 0 1.5rem;
 }
@@ -51,21 +73,8 @@ p {
     padding: 0 1.5rem;
     line-height: 1.5;
     font-weight: 600;
-    font-size: 1.125rem;
-    color: hsl(232, 10%, 55%);
-}
-
-footer {
-    color: hsl(7, 99%, 70%);
-    color: hsl(51, 100%, 49%);
-    color: hsl(167, 40%, 24%);
-    color: hsl(198, 62%, 26%);
-    color: hsl(168, 34%, 41%);
-    color: hsl(212, 27%, 19%);
-    color: hsl(213, 9%, 39%);
-    color: hsl(232, 10%, 55%);
-    color: hsl(210, 4%, 67%);
-    color: hsl(0, 0%, 100%);
+    font-size: var(--fs-p);
+    color: var(--clr-d-grayish-blue);
 }
 
 #hero {
@@ -96,7 +105,7 @@ footer {
 #transform a,
 #stand-out a {
     text-transform: uppercase;
-    font-family: 'Fraunces', sans-serif;
+    font-family: var(--ff-Fraunces);
     text-decoration: none;
     font-weight: 900;
 }
@@ -116,19 +125,19 @@ footer {
 }
 
 #transform a::after {
-    background-color: hsla(51, 100%, 49%, 30%);
+    background-color: var(--clr-yellow-tr);
 }
 
 #transform a:hover::after {
-    background-color: hsla(51, 100%, 49%, 100%);
+    background-color: var(--clr-yellow);
 }
 
 #stand-out a::after {
-    background-color: hsla(7, 99%, 70%, 30%);
+    background-color: var(--clr-red-tr);
 }
 
 #stand-out a:hover::after {
-    background-color: hsla(7, 99%, 49%, 100%);
+    background-color: var(--clr-red);
 }
 
 #graphic-design {
@@ -139,15 +148,15 @@ footer {
 }
 
 #graphic-design h2 {
-    color: hsl(167, 40%, 24%);
-    font-size: 1.75rem;
+    color: var(--clr-d-desaturated-cyan);
+    font-size: var(--fs-h2-s);
     text-transform: capitalize;
     padding-top: 25rem;
 }
 
 #graphic-design p {
-    color: hsl(167, 40%, 24%);
-    font-size: 15px;
+    color: var(--clr-d-desaturated-cyan);
+    font-size: var(--fs-p-s);
 }
 
 #photography {
@@ -158,19 +167,73 @@ footer {
 }
 
 #photography h2 {
-    color: hsl(198, 62%, 26%);
-    font-size: 1.75rem;
+    color: var(--clr-d-blue);
+    font-size: var(--fs-h2-s);
     text-transform: capitalize;
 }
 
 #photography p {
-    color: hsl(198, 62%, 26%);
-    font-size: 15px;
+    color: var(--clr-d-blue);
+    font-size: var(--fs-p-s);
+}
+
+#testimonials {
+    padding-top: 4.25rem;
+    padding-bottom: 5.75rem;
+}
+
+#testimonials li {
+    padding-top: 4.25rem;
+}
+
+#testimonials h2 {
+    text-transform: uppercase;
+    font-size: var(--fs-h2-xs);
+    color: var(--clr-grayish-blue);
+    margin-bottom: 4.125rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#testimonials img {
+    width: 4.5rem;
+    border-radius: 50%;
+}
+
+#testimonials blockquote {
+    padding: 2.5rem 1.5rem 2.75rem 1.5rem;
+    font-family: var(--ff-Barlow);
+    font-size: var(--fs-p);
+    color: var(--clr-vd-grayish-blue);
+}
+
+#testimonials figcaption {
+    font-family: var(--ff-Fraunces);
+    font-size: var(--fs-p);
+    font-weight: 900;
+    color: var(--clr-vd-desaturated-cyan);
+    line-height: 1.5;
+}
+
+#testimonials figcaption>span {
+    font-family: var(--ff-Barlow);
+    font-size: var(--fs-p-s);
+    color: var(--clr-grayish-blue);
+}
+
+#illustrations {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+#illustrations img {
+    width: 50vw;
 }
 
 .navbar {
     padding: 2.25rem 1.5rem 6.125rem 1.5rem;
-    /* text-align: left; */
     display: flex;
     justify-content: space-between;
 }
