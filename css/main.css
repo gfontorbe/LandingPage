@@ -346,13 +346,17 @@ p {
   }
 }
 
+#graphic-design {
+  padding-bottom: 2rem;
+}
+
 #graphic-design img {
   width: 100%;
   display: block;
 }
 
 #graphic-design .content {
-  margin-top: -11rem;
+  margin-top: -13rem;
 }
 
 #graphic-design .content h2 {
@@ -364,10 +368,13 @@ p {
 #graphic-design .content p {
   color: #25564b;
   font-size: 0.9375rem;
-  padding: 1.5rem 2rem 1.5rem 2rem;
+  padding: 1.5rem 2rem 0rem 2rem;
 }
 
 @media screen and (min-width: 800px) {
+  #graphic-design {
+    padding-bottom: 0;
+  }
   #graphic-design img {
     content: url(../images/desktop/image-graphic-design.jpg);
   }
@@ -376,7 +383,12 @@ p {
     margin-left: auto;
     margin-right: auto;
     max-width: 24rem;
+    margin-top: -10rem;
   }
+}
+
+#photography {
+  padding-bottom: 2rem;
 }
 
 #photography img {
@@ -385,19 +397,19 @@ p {
 }
 
 #photography .content {
-  margin-top: -11rem;
+  margin-top: -10rem;
 }
 
 #photography .content h2 {
   color: #19536b;
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-transform: capitalize;
 }
 
 #photography .content p {
   color: #19536b;
   font-size: 0.9375rem;
-  padding: 1.5rem 2rem 0 2rem;
+  padding: 1.5rem 2rem 2rem 2rem;
 }
 
 @media screen and (min-width: 800px) {
