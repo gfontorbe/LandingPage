@@ -1,0 +1,361 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+/* Variables */
+/* Custom CSS*/
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[7];
+      grid-template-rows: repeat(7, auto);
+  text-align: center;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #23303e;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #818498;
+}
+
+#hero {
+  background-image: url(../images/mobile/image-header.jpg);
+  background-position: bottom;
+  text-align: center;
+  background-size: cover;
+  padding-bottom: 8.25rem;
+}
+
+#hero h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.375rem;
+  line-height: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+#hero .navbar {
+  padding: 2.25rem 1.5rem 6.125rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#hero .navbar nav {
+  display: none;
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  padding: 2.25rem 0;
+}
+
+#hero .navbar nav::before {
+  background-color: white;
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -25px;
+  right: 0;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(100% 0, 100% 100%, 0% 100%);
+}
+
+#hero .navbar nav ul {
+  font-family: "Barlow", sans-serif;
+  color: #818498;
+  font-size: 1.125rem;
+}
+
+#hero .navbar nav li {
+  padding: 1.3rem 5.75rem;
+}
+
+#hero .navbar nav a:visited {
+  color: #818498;
+}
+
+#hero .navbar nav .contact-button {
+  background-color: #fad400;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  padding: 1.375rem 2rem;
+  border-radius: 2rem;
+  color: #23303e;
+}
+
+#hero .navbar nav .contact-button:hover {
+  background-color: rgba(61, 190, 255, 0.3);
+}
+
+#hero .navbar nav #contact {
+  padding-top: 2rem;
+  font-size: 0.9375rem;
+}
+
+#hero .navbar nav #contact a:visited {
+  color: #23303e;
+}
+
+#hero .navbar #hamburger-menu {
+  display: none;
+}
+
+#hero .navbar #hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+#transform img {
+  width: 100%;
+}
+
+#transform h2 {
+  padding: 0 1.5rem;
+}
+
+#transform p {
+  padding: 2.25rem 1.5rem 3rem 1.5rem;
+}
+
+#transform a {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  text-decoration: none;
+  font-weight: 900;
+  margin: 0 auto;
+}
+
+#transform a::after {
+  z-index: -1;
+  display: block;
+  content: '';
+  width: 125px;
+  border-radius: 4px;
+  height: 8px;
+  position: relative;
+  top: -6px;
+  left: calc(50vw - 125px/2);
+  background-color: rgba(255, 224, 46, 0.3);
+}
+
+#transform a:hover::after {
+  background-color: #fad400;
+}
+
+#transform a:visited {
+  color: #23303e;
+}
+
+#transform .content {
+  margin-top: 4.375rem;
+  margin-bottom: 3rem;
+}
+
+#stand-out img {
+  width: 100%;
+}
+
+#stand-out h2 {
+  padding: 0 1.5rem;
+}
+
+#stand-out p {
+  padding: 2.25rem 1.5rem 3rem 1.5rem;
+}
+
+#stand-out a {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+#stand-out a::after {
+  z-index: -1;
+  display: block;
+  content: '';
+  width: 125px;
+  border-radius: 4px;
+  height: 8px;
+  position: relative;
+  top: -6px;
+  left: calc(50vw - 125px/2);
+  background-color: rgba(254, 120, 103, 0.3);
+}
+
+#stand-out a:hover::after {
+  background-color: #fe7867;
+}
+
+#stand-out a:visited {
+  color: #23303e;
+}
+
+#stand-out .content {
+  margin-top: 4.375rem;
+  margin-bottom: 3rem;
+}
+
+#graphic-design {
+  position: relative;
+}
+
+#graphic-design img {
+  width: 100%;
+  display: block;
+}
+
+#graphic-design .content {
+  position: absolute;
+  margin-top: -11rem;
+}
+
+#graphic-design .content h2 {
+  color: #25564b;
+  font-size: 1.75rem;
+  text-transform: capitalize;
+}
+
+#graphic-design .content p {
+  color: #25564b;
+  font-size: 0.9375rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+#photography {
+  position: relative;
+}
+
+#photography img {
+  width: 100%;
+  display: block;
+}
+
+#photography .content {
+  position: absolute;
+  margin-top: -11rem;
+}
+
+#photography .content h2 {
+  color: #19536b;
+  font-size: 1.75rem;
+  text-transform: capitalize;
+}
+
+#photography .content p {
+  color: #19536b;
+  font-size: 0.9375rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+#testimonials {
+  padding-top: 4.25rem;
+  padding-bottom: 5.75rem;
+}
+
+#testimonials li {
+  padding-top: 4.25rem;
+}
+
+#testimonials h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #a7abae;
+  margin-bottom: 4.125rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#testimonials img {
+  width: 4.5rem;
+  border-radius: 50%;
+}
+
+#testimonials blockquote {
+  padding: 2.5rem 1.5rem 2.75rem 1.5rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125rem;
+  color: #5a636c;
+}
+
+#testimonials figcaption {
+  font-family: "Fraunces", serif;
+  font-size: 1.125rem;
+  font-weight: 900;
+  color: #23303e;
+  line-height: 1.5;
+}
+
+#testimonials figcaption > span {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.9375rem;
+  color: #a7abae;
+}
+
+#illustrations {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+#illustrations img {
+  width: 100%;
+}
+
+footer {
+  background-color: #91d4c6;
+  color: #2e7667;
+  font-family: "Barlow", sans-serif;
+  padding-top: 4.375rem;
+}
+
+footer a:visited {
+  color: #2e7667;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  padding: 2.25rem 3.5rem;
+  font-size: 1.125rem;
+}
+/*# sourceMappingURL=main.css.map */
